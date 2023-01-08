@@ -1,0 +1,44 @@
+@urlDev=http://localhost:3051
+
+### create contact
+POST {{urlDev}}/api/contact/
+Content-Type: application/json
+
+{
+    "name": "ghost 4",
+    "email": "adfsdf",
+    "address": "TG 2",
+    "phone": "123456789",
+    "favorite": false
+}
+
+### findAll contacts
+GET {{urlDev}}/api/contact/
+
+### find contact by name
+GET {{urlDev}}/api/contact/?name=asd
+
+
+### find contact by id 
+GET {{urlDev}}/api/contact/63b6bcb3989834d17e39a29
+
+### update contact by id
+PUT {{urlDev}}/api/contact/63b6bcb3989834d17e39a293
+Content-Type: application/json
+
+{
+    "name": "ghost updated 2"
+
+}
+
+### delete contact by id
+DELETE {{urlDev}}/api/contact/63b6bcb3989834d17e39a293
+
+### deleteAll contacts
+DELETE {{urlDev}}/api/contact/
+
+###
+GET {{urlDev}}/api/contact/favorite
+
+
+
