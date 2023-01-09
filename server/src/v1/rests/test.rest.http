@@ -1,29 +1,29 @@
 @urlDev=http://localhost:3051
 
-### create contact
-POST {{urlDev}}/api/contact/
+### create contacts
+POST {{urlDev}}/api/contacts/
 Content-Type: application/json
 
 {
-    "name": "ghost 4",
-    "email": "adfsdf",
-    "address": "TG 2",
-    "phone": "123456789",
+    "name": "ghost 1",
+    "email": "test@gmail.com",
+    "address": "TGds 2",
+    "phone": "098765432",
     "favorite": false
 }
 
-### findAll contacts
-GET {{urlDev}}/api/contact/
+### findAll contactss
+GET {{urlDev}}/api/contacts/
 
-### find contact by name
-GET {{urlDev}}/api/contact/?name=asd
+### find contacts by name
+GET {{urlDev}}/api/contacts/?name=asd
 
 
-### find contact by id 
-GET {{urlDev}}/api/contact/63b6bcb3989834d17e39a29
+### find contacts by id 
+GET {{urlDev}}/api/contacts/63b6bcb3989834d17e39a29
 
-### update contact by id
-PUT {{urlDev}}/api/contact/63b6bcb3989834d17e39a293
+### update contacts by id
+PUT {{urlDev}}/api/contacts/63b6bcb3989834d17e39a293
 Content-Type: application/json
 
 {
@@ -31,14 +31,14 @@ Content-Type: application/json
 
 }
 
-### delete contact by id
-DELETE {{urlDev}}/api/contact/63b6bcb3989834d17e39a293
+### delete contacts by id
+DELETE {{urlDev}}/api/contacts/63b6bcb3989834d17e39a293
 
-### deleteAll contacts
-DELETE {{urlDev}}/api/contact/
+### deleteAll contactss
+DELETE {{urlDev}}/api/contacts/
 
 ###
-GET {{urlDev}}/api/contact/favorite
+GET {{urlDev}}/api/contacts/favorite
 
 
 
