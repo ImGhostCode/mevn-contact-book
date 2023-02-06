@@ -4,13 +4,15 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 const compression = require("compression");
 const ApiError = require("./v1/utils/ApiError");
+const fs = require('fs');
+const path = require("path");
 
 //init dbs
 // require('./v1/databases/init.redis')
 
 //user middleware
 app.use(helmet());
-app.use(morgan("combined"));
+app.use(morgan("combined", { stream: fs.createWriteStream(path.join(__dirname, '/v1/logs/access.log')) }));
 // compress responses
 app.use(compression());
 
