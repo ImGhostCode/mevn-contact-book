@@ -6,8 +6,8 @@ Content-Type: application/json
 
 {
     "name": "ghost 1",
-    "email": "test@gmail.com",
-    "address": "TGds 2",
+    "email": "ghost1@gmail.com",
+    "address": "ghost 1 address",
     "phone": "098765432",
     "favorite": false
 }
